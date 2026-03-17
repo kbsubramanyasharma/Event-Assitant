@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Catering Chatbot - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+    </div>
+    
+    <div class="auth-container glass-panel fade-in">
+        <div class="auth-header">
+            <h1>Catering AI</h1>
+            <p>Smart event management starts here.</p>
+        </div>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="auth-form active-form">
+            <h2>Welcome Back</h2>
+            <div class="input-group">
+                <input type="text" id="loginUsername" required placeholder="Username">
+            </div>
+            <div class="input-group">
+                <input type="password" id="loginPassword" required placeholder="Password">
+            </div>
+            <button type="submit" class="btn primary-btn">Go to Chat</button>
+            <p class="switch-form">Don't have an account? <span onclick="toggleAuth('signup')">Sign Up</span></p>
+            <div id="loginError" class="error-msg"></div>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signupForm" class="auth-form hidden-form">
+            <h2>Create Account</h2>
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" id="signupUsername" placeholder="Enter username" required>
+            </div>
+            <div class="input-group">
+                <label>Email Address</label>
+                <input type="email" id="signupEmail" placeholder="Enter email" required>
+            </div>
+            <div class="input-group">
+                <label>Password</label>
+                <input type="password" id="signupPassword" placeholder="Create password" required>
+            </div>
+            <button type="submit" class="btn primary-btn">Sign Up</button>
+            <p class="switch-form">Already have an account? <span onclick="toggleAuth('login')">Log In</span></p>
+            <div id="signupError" class="error-msg"></div>
+            <div id="signupSuccess" class="success-msg"></div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
