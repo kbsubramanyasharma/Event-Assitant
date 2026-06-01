@@ -41,7 +41,7 @@ A smart, AI-driven assistant designed specifically for catering staff and event 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/catering-chatbot.git
+   git clone https://github.com/kbsubramanyasharma/Event-Assitant.git
    cd catering-chatbot
    ```
 
